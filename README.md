@@ -3,15 +3,18 @@ Run:
 yarn karma start karma.conf.js
 ```
 
-Then open [http://0.0.0.0:9876/](http://0.0.0.0:9876/) in a browser.
-
 The errors will look something like this:
 
 ```
-23 06 2020 01:40:51.029:WARN [web-server]: 404: /base/.yarn/$virtual/karma-jasmine-virtual-d5e825a809/0/cache/karma-jasmine-npm-3.3.1-3b2922b99a-5eda66e5ce.zip/node_modules/karma-jasmine/lib/boot.js?760d54bbca4f739f1f8b252c1636d76201cc4e88
-23 06 2020 01:40:51.029:WARN [web-server]: 404: /base/.yarn/$virtual/karma-jasmine-virtual-d5e825a809/0/cache/karma-jasmine-npm-3.3.1-3b2922b99a-5eda66e5ce.zip/node_modules/karma-jasmine/lib/adapter.js?e14e485cb2a825ba86577e6749e91dda740e6c04
-23 06 2020 01:40:51.045:WARN [web-server]: 404: /base/.yarn/$virtual/karma-jasmine-virtual-d5e825a809/0/cache/karma-jasmine-npm-3.3.1-3b2922b99a-5eda66e5ce.zip/node_modules/karma-jasmine/lib/boot.js?760d54bbca4f739f1f8b252c1636d76201cc4e88
-23 06 2020 01:40:51.049:WARN [web-server]: 404: /base/.yarn/$virtual/karma-jasmine-virtual-d5e825a809/0/cache/karma-jasmine-npm-3.3.1-3b2922b99a-5eda66e5ce.zip/node_modules/karma-jasmine/lib/adapter.js?e14e485cb2a825ba86577e6749e91dda740e6c04
-```
+acls@n7 ~/karma-berry-virtual (master)> yarn karma start karma.conf.js
+24 06 2020 13:15:11.500:ERROR [karma-server]: Server start failed on port 9876: Error: karma tried to access browserify, but it isn't declared in its dependencies; this makes the require call ambiguous and unsound.
 
-Notice `.yarn/$virtual` is not `.yarn/$$virtual`.
+Required package: browserify (via "browserify")
+Required by: karma@https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d (via /home/acls/karma-berry-virtual/.yarn/cache/karma-https-91223b4dd3-b0b1abe735.zip/node_modules/karma/lib/utils/)
+
+Require stack:
+- /home/acls/karma-berry-virtual/.yarn/cache/karma-https-91223b4dd3-b0b1abe735.zip/node_modules/karma/lib/utils/bundle-utils.js
+- /home/acls/karma-berry-virtual/.yarn/cache/karma-https-91223b4dd3-b0b1abe735.zip/node_modules/karma/lib/server.js
+- /home/acls/karma-berry-virtual/.yarn/cache/karma-https-91223b4dd3-b0b1abe735.zip/node_modules/karma/lib/cli.js
+- /home/acls/karma-berry-virtual/.yarn/cache/karma-https-91223b4dd3-b0b1abe735.zip/node_modules/karma/bin/karma
+```

@@ -1,7 +1,7 @@
 {
   "name": "karma-berry-virtual",
   "devDependencies": {
-    "karma": "5.1.0",
+    "karma": "https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d",
     "karma-firefox-launcher": "1.3.0",
     "karma-jasmine": "3.3.1"
   }

@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackPool": [
       [
         "karma",
-        "npm:5.1.0"
+        "https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d"
       ],
       [
         "karma-firefox-launcher",
@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["karma", "npm:5.1.0"],
+            ["karma", "https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d"],
             ["karma-firefox-launcher", "npm:1.3.0"],
             ["karma-jasmine", "virtual:686ac0530fc884dbc93fc3dffcb94500269950162f505f933d6a1454fc4a628ac1ff18e87ba633c2861776a41e8efc5ee3809f6bf00648d61be43496354db160#npm:3.3.1"]
           ],
@@ -1360,10 +1360,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["karma", [
-        ["npm:5.1.0", {
-          "packageLocation": "./.yarn/cache/karma-npm-5.1.0-45cbf447d9-e97841cbab.zip/node_modules/karma/",
+        ["https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d", {
+          "packageLocation": "./.yarn/cache/karma-https-91223b4dd3-b0b1abe735.zip/node_modules/karma/",
           "packageDependencies": [
-            ["karma", "npm:5.1.0"],
+            ["karma", "https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d"],
             ["body-parser", "npm:1.19.0"],
             ["braces", "npm:3.0.2"],
             ["chokidar", "npm:3.4.0"],
@@ -1397,7 +1397,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["karma-berry-virtual", "workspace:."],
-            ["karma", "npm:5.1.0"],
+            ["karma", "https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d"],
             ["karma-firefox-launcher", "npm:1.3.0"],
             ["karma-jasmine", "virtual:686ac0530fc884dbc93fc3dffcb94500269950162f505f933d6a1454fc4a628ac1ff18e87ba633c2861776a41e8efc5ee3809f6bf00648d61be43496354db160#npm:3.3.1"]
           ],
@@ -1420,7 +1420,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["karma-jasmine", "virtual:686ac0530fc884dbc93fc3dffcb94500269950162f505f933d6a1454fc4a628ac1ff18e87ba633c2861776a41e8efc5ee3809f6bf00648d61be43496354db160#npm:3.3.1"],
             ["jasmine-core", "npm:3.5.0"],
-            ["karma", "npm:5.1.0"]
+            ["karma", "https://github.com/karma-runner/karma.git#commit=90cce1057abaf8f6fbb9b4ec93d1100ca101ab1d"]
           ],
           "packagePeers": [
             "karma"
